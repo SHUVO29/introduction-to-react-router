@@ -6,16 +6,17 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Header from './Components/Header/Header.jsx';
 
 const router = createBrowserRouter([
     {
       path: '/',
-      element: <div>Hello from react router!! </div>
+      element: <Home></Home>
 
     },
     {
-      path: '/about',
-      element: <div>I am in the about page</div>
+      path: 'header',
+      element: <Header></Header>
     }
 ])
 
